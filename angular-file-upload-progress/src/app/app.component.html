@@ -1,0 +1,18 @@
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <input type="file" (change)="upload($event.target.files[0])">
+      <ion-row>
+        <ion-col>
+          <ion-text>{{ (progress$ | async) | percent }}</ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-progress-bar [value]="(progress$ | async)" [buffer]="(progress$ | async) * 2"></ion-progress-bar>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
