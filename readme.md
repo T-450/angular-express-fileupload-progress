@@ -1,1 +1,1 @@
-Simple project showcasing angular+nodejs file uploader progress
+Sample project showcasing angular+nodejs file uploader progress
